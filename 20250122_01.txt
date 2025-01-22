@@ -1,0 +1,35 @@
+DBMS
+
+Oracle
+SQL
+
+윈도우 검색에 서비스 검색해서 
+OracleOraDB21Home1TNSListener
+OracleOraDB21Home1MTSRecoveryService
+두개가 실행중이면 오라클이 실행 잘 된 거임.
+
+
+CRUD(추가읽기수정삭제)
+Create
+Read
+Update
+Delete
+
+관리자 접속 비번 : oracle
+
+
+SYSTEM계정에서
+SCOTT계정 우클릭해서 권한 부여
+부여된 롤에서 커넥트, 리소스를 권한 부여하고 기본값설정
+시스템 권한에서도 언리미티드 테이블스페이스 권한 부여하기
+
+
+scott계정
+
+C:\app\it\product\21c\dbhomeXE\rdbms\admin
+에 있는 scott.sql
+열어서 CREATE TABLE DEPT부터 COMMIT까지 복사해서 SCOTT 계정에 복붙
+
+
+1 2 3 4 5 6 7 
+A B C D D E F
