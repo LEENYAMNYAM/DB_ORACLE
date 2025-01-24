@@ -15,7 +15,8 @@ Read
 Update
 Delete
 
-관리자 접속 비번 : oracle
+관리자(system 계정) 접속 비번 : oracle
+scott계정&hr계정 비번 : tiger
 
 
 SYSTEM계정에서
@@ -24,7 +25,7 @@ SCOTT계정 우클릭해서 권한 부여
 시스템 권한에서도 언리미티드 테이블스페이스 권한 부여하기
 
 
-scott계정
+
 
 C:\app\it\product\21c\dbhomeXE\rdbms\admin
 에 있는 scott.sql
