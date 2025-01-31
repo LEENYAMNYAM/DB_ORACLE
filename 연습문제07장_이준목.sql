@@ -19,7 +19,7 @@ group by deptno, To_char(hiredate, 'YYYY')
 order by To_char(hiredate, 'YYYY') desc;
 
 -- 4¹ø ¹®Á¦
-select nvl2(comm, 'O', 'X'), count(*)
+select nvl2(comm, 'O', 'X') EXIST_COMM, count(*) CNT
 from emp
 group by nvl2(comm, 'O', 'X');
 
@@ -28,3 +28,6 @@ select deptno, To_char(hiredate, 'YYYY') HIRE_YEAR, count(*) CNT, max(sal) MAX_S
 from emp
 group by rollup(deptno, To_char(hiredate, 'YYYY'))
 order by deptno, To_char(hiredate, 'YYYY');
+
+
+
