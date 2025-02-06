@@ -926,3 +926,61 @@ where e1.mgr = e2.empno
 order by e1.empno;
 
 
+
+
+
+
+--1. ACCOUNTING(dname) 부서 소속 사원의 이름과 입사일 출력 
+select * from dept;
+select * from emp;
+
+select empno, hiredate, dname, e.deptno
+from emp e, dept d
+where e.deptno = d.deptno and dname = 'ACCOUNTING';
+---SQL-00 표준문법
+select empno, hiredate
+from emp e join dept d 
+            on e.deptno = d.deptno
+where dname = 'ACCOUNTING';
+
+-- 2. 0보다 많은 comm 을 받는 사원이읆과 부서명 출력
+select * from emp;
+select ename, dname, comm
+from emp e, dept d
+where e.deptno = d.deptno and comm > 0;
+
+select ename, dname, comm
+from emp e, dept d
+where e.deptno = d.deptno
+and comm is not null and comm<> 0;
+
+select ename, dname, comm
+from emp e join dept d
+            on e.deptno = d.deptno
+where comm > 0;
+
+select ename, dname, comm
+from emp e join dept d
+            on e.deptno = d.deptno
+where comm is not null and comm <> 0;
+
+-- 3. 누구의 매니저는 누구입니다.
+-- 예) SMITH 의 매니저는 FORD 입니다.
+
+select e.ename 사원, m.ename 상사
+from emp e, emp m
+where e.mgr = m.empno
+order by e.ename;
+
+select e.ename||'의 매니저는'||m.ename||'입니다.' 사원_상사
+from emp e, emp m
+where e.mgr = m.empno
+order by e.ename;
+
+select e.ename||'의 매니저는'||m.ename||'입니다.' 사원_상사
+from emp e join emp m
+on e.mgr = m.empno
+order by e.ename;
+
+
+
