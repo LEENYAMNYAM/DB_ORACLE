@@ -15,9 +15,18 @@ Read
 Update
 Delete
 
+<<<<<<< HEAD
 관리자(system 계정) 접속 비번 : oracle
 scott계정&hr계정 비번 : tiger
 
+=======
+관리자 접속 비번 : oracle
+<<<<<<< HEAD
+집컴 관리자 비번 : Wnsahr!6033
+>>>>>>> 38fbd69 (커밋커밋)
+=======
+
+>>>>>>> 95b2e08 (Revert "커밋커밋")
 
 SYSTEM계정에서
 SCOTT계정 우클릭해서 권한 부여
