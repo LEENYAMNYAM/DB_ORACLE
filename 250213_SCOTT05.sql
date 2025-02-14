@@ -264,7 +264,7 @@ commit;
     -- not null : null값 입력 금지
     -- unique : 중복값 입력 금지
     -- primary key (기본키) : not null + unique
-    -- foreign key (외래키) : 
+    -- foreign key (외래키) : 다른테이블에 있는 행에 있는 값과 null값만 추가 가능(없는 값은 추가불가)
     -- check : 
 --p362
 --not null
@@ -459,3 +459,246 @@ drop table table_name4;
 drop table table_name3;
 drop table table_name2;
 drop table table_name;
+
+-- 외래키 : 다른테이블에 있는 행에 있는 값과 null값만 추가 가능(없는 값은 추가불가)
+    -- 부서 : dept_fk(부서번호, 부서명, 지역)
+    create table dept_fk(
+        deptno number(5) constraint dept_fk_deptno_pk primary key,
+        dname varchar2(20),
+        loc varchar2(50)
+    );
+    --  사원 : emp_fk(사원번호, 사원이름, 직책, 부서번호)
+    create table emp_fk(
+        empno number(2) constraint emp_fk_empno_pk primary key,
+        ename varchar2(20),
+        job varchar2(20),
+        deptno number(5)
+    );
+    -- 데이터 추가
+    insert into dept_fk values(10, '영업', '부산');
+    insert into dept_fk values(20, '영업2', '부산2');
+    insert into emp_fk values(1, '홍길동', '사원', 10);
+    commit;
+    select * from dept_fk;
+    select * from emp_fk;
+    insert into emp_fk values(2, '이순신', '사원', 30);
+    -- 외래키를 안쓰면 지금은 문제 없이 입력됨.
+ -------------------------------------------------------------------------------
+     create table dept_fk1(
+        deptno number(5) constraint dept_fk1_deptno_pk1 primary key,
+        dname varchar2(20),
+        loc varchar2(50)
+    );
+    create table emp_fk1(
+        empno number(2) constraint emp_fk1_empno_pk1 primary key,
+        ename varchar2(20),
+        job varchar2(20),
+        deptno number(5) constraint emp_fk1_deptno_pk1
+        references dept_fk1(deptno)
+    );
+    
+    -- 데이터 추가
+    insert into dept_fk1 values(10, '영업', '부산');
+    insert into dept_fk1 values(20, '영업2', '부산2');
+    insert into emp_fk1 values(1, '홍길동', '사원', 10);
+    commit;
+    select * from dept_fk1;
+    select * from emp_fk1;
+    -- 무결성 제약조건(SCOTT.SYS_C008409)이 위배되었습니다- 부모 키가 없습니다
+    insert into emp_fk1 values(2, '이순신', '사원', 30);    
+    -- dept_fk1에 30번 부서가 없어서 오류가 생김
+    -- 단, null값은 가능함
+    insert into emp_fk1 values(2, '이순신', '사원', null);     
+    select * from emp_fk1;
+    
+    insert into emp_fk1 values(3, '강감찬', '팀장', 10);     
+    commit;
+    select * from emp_fk1;
+    -- 1번 사원 삭제
+    delete from emp_fk1 where empno=1;
+    -- 20번 부서 삭제
+    delete from dept_fk1 where deptno = 20;
+    select * from emp_fk1;
+    -- 10번 부서 삭제
+    -- emp_fk1에 10번부서인 데이터가 존재하기 때문에 부모데이터의 10번 부서 삭제가 불가능함.
+    delete from dept_fk1 where deptno = 10;
+    
+    -- 2번 사원의 부서번호를 30으로 수정
+    update emp_fk1
+    set deptno = 30
+    where empno =2;
+    --외래키 제약조건 삭제
+    alter table emp_fk1
+    drop constraint emp_fk1_deptno_pk1;
+    insert into emp_fk1 values(4, 'aaa', '팀장', 30);  -- 성공(외래키 제약조건 삭제했기 때문
+    --외래키 제약조건을 추가
+    alter table emp_fk1
+    add constraint emp_fk1_deptno_pk1 foreign key(deptno)
+    references dept_fk1(deptno)
+    on delete cascade;  --부모가 지워지면 자식들도 자동으로 지워지도록 해줌
+    insert into emp_fk1 values(4, 'aaa', '팀장', 30);
+    
+    -- 10번 부서 삭제
+    delete from dept_fk1 where deptno = 10;
+
+    -- 툴에서 외래키 제약조건 설정하기    
+    -- 테이블 우클릭 - 편집 - 제약조건 - +키 클릭 - 새 외래키 제약조건 클릭
+    ALTER TABLE EMP_FK
+        ADD CONSTRAINT EMP_FK_FK1 FOREIGN KEY
+        (DEPTNO)
+        REFERENCES DEPT_FK
+        (DEPTNO)
+    ON DELETE CASCADE ENABLE;
+    
+    -- 테이블 삭제
+    drop table dept_fk;
+    drop table dept_fk1;
+    drop table emp_fk;
+    drop table emp_fk1;
+    
+    -------------------------------------
+    -- check : row변수의 제약조건을 걸어줌
+    create table table_check(
+        login_id varchar2(20) constraint tb_check_loginID primary key,
+        login_pwd varchar2(20) constraint tb_check_loginPWD check (length(login_pwd) > 5),
+        tel varchar2(20)
+    );
+    --데이터 추가
+    -- 체크 제약조건(SCOTT.TB_CHECK_LOGINPWD)이 위배되었습니다
+    insert into table_check(login_id, login_pwd, tel)
+    values('aa', '1234', '010-1111-2222');
+    
+    -- 성공
+    insert into table_check(login_id, login_pwd, tel)
+    values('aa', '123456', '010-1111-2222');
+    commit;
+
+-------------------------------------------------------------------------------
+-- 연습하기
+    -- Member(userid, uusername, tel)
+    -- 기본키 userid 제약조건 pk_member
+    drop table comments;
+    drop table Board;
+    drop table Member;
+    drop sequence comments_seq;
+    drop sequence board_seq;
+    
+    create table Member(
+        userid varchar2(20) constraint pk_member primary key,
+        username varchar2(20),
+        tel varchar2(20)
+    );    
+    
+    -- Board(num, title, userid, content, regdate(오늘날짜 디폴트값)
+    -- 기본키 : num(시퀀스명 : board_seq) / 제약조건 pk_board
+    -- 외래키 : userid / 제약조건 fk_board
+    
+    create table Board(
+        num number(3) constraint pk_board primary key,
+        title varchar2(30),
+        userid varchar2(20) constraint fk_board references Member(userid),
+        content varchar2(100),
+        regdate date default sysdate
+    );
+    create sequence Board_seq
+    increment by 1
+    start with 1
+    minvalue 1
+    nocycle
+    nocache;
+    
+    -- comments(cnum, msg, regdate(오늘날짜 디폴트값)
+    -- 기본키 : cnum(시퀀스명 : comments_seq / 제약조건 pk_comments)
+    -- 외래키 설정
+
+    create table comments(
+        cnum number(3) constraint pk_comments primary key,
+        msg varchar2(30),
+        regdate date default sysdate,
+        userid varchar2(20) constraint fk_comments_member references Member(userid),   --member보드
+        bnum number(3) constraint fk_board_comments references Board(num)
+    );
+    create sequence comments_seq
+    increment by 1
+    start with 1
+    minvalue 1
+    nocycle
+    nocache;
+    
+    -- member 데이터 추가
+    insert into member values('a1', '홍길동', '010-1111-2222');
+    commit;
+    select * from member;
+    
+    -- board(num, title, content, regdate, userid) 데이터 추가
+    insert into board values(board_seq.nextval, '제목1', 'a1', '내용1', sysdate);
+    select * from board;
+    
+    -- comments(cnum msg regdate, userid, bnum) 데이터 추가
+    insert into comments values(comments_seq.nextval, '메세지1', sysdate, 'a1', 1);
+    insert into comments values(comments_seq.nextval, '메세지2', sysdate, 'a1', 1);
+    insert into comments values(comments_seq.nextval, '메세지3', sysdate, 'a1', 1);
+    insert into comments values(comments_seq.nextval, '메세지4', sysdate, 'a1', 1);
+        
+    select * from comments;
+    
+    -- 1번 게시글을 쓴 사람의 이름을 출력
+    select username
+    from board b , member m
+    where b.userid = m.userid and b.num=1;
+    
+    select username
+    from board b natural join member m
+    where b.num=1;
+    
+    -- member 데이터 추가
+    insert into member values('b1', '이순신', '010-1111-3333');
+    -- board 데이터 추가
+    insert into board values(board_seq.nextval, '제목2', 'b1', '내용2', sysdate);
+    -- comments 데이터 추가
+    insert into comments values(comments_seq.nextval, '메세지11', sysdate, 'b1', 2);
+    insert into comments values(comments_seq.nextval, '메세지22', sysdate, 'b1', 2);
+    insert into comments values(comments_seq.nextval, '메세지33', sysdate, 'b1', 2);
+    insert into comments values(comments_seq.nextval, '메세지44', sysdate, 'b1', 2);
+    insert into comments values(comments_seq.nextval, '메세지111', sysdate, 'b1', 1);
+    commit;
+    
+    select * from member;
+    select * from board;
+    select * from comments;
+    
+    -- member 별 댓글 수 출력(userid, 댓글수)
+    select  userid, count(*) 댓글수, bnum 게시글번호
+    from comments
+    group by userid, bnum;
+    -- member 별 댓글 수와 이름 출력(userid, 댓글수, username)
+    select username, userid, 게시글번호, 댓글수
+    from( select  userid, count(*) 댓글수, bnum 게시글번호
+            from comments
+            group by userid, bnum) natural join member;
+    
+-- member 테이블 a1 삭제
+    --무결성 제약조건(SCOTT.FK_COMMENTS_MEMBER)이 위배되었습니다- 자식 레코드가 발견되었습니다
+    delete from member where userid='a1';
+    -- board 테이블의 제약조건 확인
+    select * from user_constraints where table_name_'BOARD';
+          
+---------------------------------------------------------------------------------
+
+-- scott student / professor / department
+-- student 외래키 부여 (student 의 profno ==> professor 의 profno)
+    alter table student 
+        modify(profno number(4) 
+               constraint student_profno_fk 
+               references professor(profno));
+--  add constraint student_profno_fk references professor(profno);           
+               
+    
+-- professor 외래키 부여(professor의 deptno ==> department 의 deptno)
+    alter table professor 
+        modify(deptno number(3) 
+               constraint professor_deptno_fk 
+               references department(deptno));
+
+
+          
