@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DEPT_CONST" directorySegmentName="seg_0" id="CBD481E5-9832-F859-5F1C-C40F80D775E6">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:46 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<schemaObject>40D51C40-F3DE-98A3-8D6B-C9F4ABF11106</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>4CB9B629-8F73-432E-3108-FB3A5BB081A6</segment>
+<tableSpace>56246165-571E-D7CD-86F8-5A64B1FD848B</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="LOC" id="2981275E-3A02-7C86-58C8-0B27172DC741">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:46 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DNAME" id="856BD1A3-BABA-2E9F-E803-0AB7D0133A8A">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:46 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPTNO" id="E5895578-609D-75DE-88C1-BC7F604DB53A">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:46 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DEPTCONST_DNAME_UNQ" id="A78A73F7-56A1-9833-BC53-4A59481A3D27">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:46 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<schemaObject>40D51C40-F3DE-98A3-8D6B-C9F4ABF11106</schemaObject>
+<segment>ED5D8710-FEEA-F2F9-F12C-A042FF0C7E85</segment>
+<tableSpace>56246165-571E-D7CD-86F8-5A64B1FD848B</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DEPTCONST_DEPTNO_PK" id="B26C1100-039E-ECE0-8E12-D3DECF4D3C68">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:46 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<schemaObject>40D51C40-F3DE-98A3-8D6B-C9F4ABF11106</schemaObject>
+<segment>ED5D8710-FEEA-F2F9-F12C-A042FF0C7E85</segment>
+<tableSpace>56246165-571E-D7CD-86F8-5A64B1FD848B</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DEPTCONST_DEPTNO_PK" id="142B9A45-0C05-A00A-38EA-09121D59EBF0">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:46 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<segment>ED5D8710-FEEA-F2F9-F12C-A042FF0C7E85</segment>
+<tableSpace>56246165-571E-D7CD-86F8-5A64B1FD848B</tableSpace>
+<existingIndex>B26C1100-039E-ECE0-8E12-D3DECF4D3C68</existingIndex>
+<indexSegment>ED5D8710-FEEA-F2F9-F12C-A042FF0C7E85</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="DEPTCONST_DNAME_UNQ" id="6D8F3EF3-E508-599B-60C3-3B9F83F42B77">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:46 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<segment>ED5D8710-FEEA-F2F9-F12C-A042FF0C7E85</segment>
+<tableSpace>56246165-571E-D7CD-86F8-5A64B1FD848B</tableSpace>
+<existingIndex>A78A73F7-56A1-9833-BC53-4A59481A3D27</existingIndex>
+<indexSegment>ED5D8710-FEEA-F2F9-F12C-A042FF0C7E85</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

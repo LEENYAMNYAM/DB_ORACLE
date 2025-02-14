@@ -1,0 +1,244 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F7F3142-D95D-2CA9-8C06-FF57F25F69F1" schemaObject="28BE8DA2-DAE4-80B4-EE90-747BB4CF01EA" name="STUDENT">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>STUDENT</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:42 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STUDNO" id="90092AA0-76FC-F1E5-4ED7-0CA4CC907EAF">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>STUDNO</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:42 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="D209D13E-81FA-7938-630B-B73268F048FF">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:42 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="AF95E616-CA36-7D73-8B06-8BB13DAE8B8D">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:42 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GRADE" id="643C739C-6C22-9658-C28C-8437F369CCDD">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>GRADE</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:42 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<constraintName>SYS_C008317</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>6</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="JUMIN" id="AD2234B6-03C0-E577-4445-977E2AD4FDD4">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>JUMIN</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:42 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13 BYTE</dataTypeSize>
+<ownDataTypeParameters>13 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BIRTHDAY" id="D770D090-5128-6B7F-AEB6-5AF6832B2BDE">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>BIRTHDAY</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:42 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEL" id="C292194A-CC5B-34AF-345B-0409CC5891EC">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>TEL</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:42 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HEIGHT" id="E129DE16-9693-FCEC-CCAB-2E53570D9EEB">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>HEIGHT</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:42 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WEIGHT" id="5BB9F233-FAFA-18E8-12FE-C16AE7C935EC">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>WEIGHT</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:42 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPTNO1" id="3C17E66D-A8DE-95B0-F6EA-884FB607BA0A">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>DEPTNO1</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:42 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPTNO2" id="39E2D904-63BE-D462-5A61-59C366E13A8D">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>DEPTNO2</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:42 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROFNO" id="BEA72397-9440-CF16-FB24-B6B61182AF46">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PROFNO</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:42 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="83583592-F6C2-00AA-D3F2-8FF77EA29109" referredColumn="6926239D-2FCE-CD7D-4E89-6A1FB5EE64D9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF09CB2D-6F0A-F900-3BEB-8B01B73A664B" schemaObject="28BE8DA2-DAE4-80B4-EE90-747BB4CF01EA" name="STUDENT_PK">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>SYS_C008318</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:42 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90092AA0-76FC-F1E5-4ED7-0CA4CC907EAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="613735E9-69BE-715C-082E-39FA398FD799" schemaObject="28BE8DA2-DAE4-80B4-EE90-747BB4CF01EA" name="STUDENT_ID_UN">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>SYS_C008319</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:42 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF95E616-CA36-7D73-8B06-8BB13DAE8B8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09DC27C7-D0DD-EC0B-6BE9-8F554FAD6094" name="STUDENT_PROFNO_FK">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:42 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEA72397-9440-CF16-FB24-B6B61182AF46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

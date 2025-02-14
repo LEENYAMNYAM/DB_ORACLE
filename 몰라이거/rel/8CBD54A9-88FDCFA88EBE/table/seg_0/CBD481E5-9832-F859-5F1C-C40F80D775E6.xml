@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CBD481E5-9832-F859-5F1C-C40F80D775E6" schemaObject="40D51C40-F3DE-98A3-8D6B-C9F4ABF11106" name="DEPT_CONST">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>DEPT_CONST</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:46 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEPTNO" id="E5895578-609D-75DE-88C1-BC7F604DB53A">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>DEPT_CONST</sourceObjSchema>
+<sourceObjName>DEPTNO</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:46 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DNAME" id="856BD1A3-BABA-2E9F-E803-0AB7D0133A8A">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>DEPT_CONST</sourceObjSchema>
+<sourceObjName>DNAME</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:46 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>14 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOC" id="2981275E-3A02-7C86-58C8-0B27172DC741">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>DEPT_CONST</sourceObjSchema>
+<sourceObjName>LOC</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:46 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13 BYTE</dataTypeSize>
+<ownDataTypeParameters>13 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>DEPTCONST_LOC_NN</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="142B9A45-0C05-A00A-38EA-09121D59EBF0" name="DEPTCONST_DEPTNO_PK">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>DEPTCONST_DEPTNO_PK</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:46 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5895578-609D-75DE-88C1-BC7F604DB53A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D8F3EF3-E508-599B-60C3-3B9F83F42B77" name="DEPTCONST_DNAME_UNQ">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>DEPTCONST_DNAME_UNQ</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:46 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="856BD1A3-BABA-2E9F-E803-0AB7D0133A8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B26C1100-039E-ECE0-8E12-D3DECF4D3C68" schemaObject="40D51C40-F3DE-98A3-8D6B-C9F4ABF11106" name="DEPTCONST_DEPTNO_PK">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>DEPTCONST_DEPTNO_PK</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:46 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5895578-609D-75DE-88C1-BC7F604DB53A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A78A73F7-56A1-9833-BC53-4A59481A3D27" schemaObject="40D51C40-F3DE-98A3-8D6B-C9F4ABF11106" name="DEPTCONST_DNAME_UNQ">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>DEPTCONST_DNAME_UNQ</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:46 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="856BD1A3-BABA-2E9F-E803-0AB7D0133A8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="EMP_CONST" directorySegmentName="seg_0" id="0FDF2E47-E659-526C-6F9B-2DEAE75BCE16">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<schemaObject>40D51C40-F3DE-98A3-8D6B-C9F4ABF11106</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>4CB9B629-8F73-432E-3108-FB3A5BB081A6</segment>
+<tableSpace>56246165-571E-D7CD-86F8-5A64B1FD848B</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DEPTNO" id="0663E85A-826F-A450-BCCC-BD12F9B49F03">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMM" id="28D730E6-C90C-985C-2CE9-CEC905335C1C">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TEL" id="4467EA97-1CD1-DB18-D859-C5FEAFFB368B">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ENAME" id="4F632D4A-5A6F-8654-571D-80080F6187B1">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPNO" id="F48EA646-2214-EE82-7CEB-E482239B7EF3">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HIREDATE" id="FBDAB2E0-5CD4-3422-9165-A0C18ACA3042">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JOB" id="FC7CBE6D-C1A0-BFC7-D8BF-12F0D7A7248A">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SAL" id="FF9D051C-33BE-0FF4-9F7E-F2CAA25129AF">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMPCONST_EMPNO_PK" id="2C678F24-55C7-6BE1-5B65-5FAD7DA5FD2A">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<schemaObject>40D51C40-F3DE-98A3-8D6B-C9F4ABF11106</schemaObject>
+<segment>ED5D8710-FEEA-F2F9-F12C-A042FF0C7E85</segment>
+<tableSpace>56246165-571E-D7CD-86F8-5A64B1FD848B</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EMPCONST_TEL_UNQ" id="C0558AA4-393F-A078-046D-60181CA29D44">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<schemaObject>40D51C40-F3DE-98A3-8D6B-C9F4ABF11106</schemaObject>
+<segment>ED5D8710-FEEA-F2F9-F12C-A042FF0C7E85</segment>
+<tableSpace>56246165-571E-D7CD-86F8-5A64B1FD848B</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EMPCONST_DEPTNO_FK" id="6E7ECD99-E5E9-F329-AB03-AD50CDB3CADD">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EMPCONST_EMPNO_PK" id="691F17BE-EF8B-C955-7651-0553E1EE5057">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<segment>ED5D8710-FEEA-F2F9-F12C-A042FF0C7E85</segment>
+<tableSpace>56246165-571E-D7CD-86F8-5A64B1FD848B</tableSpace>
+<existingIndex>2C678F24-55C7-6BE1-5B65-5FAD7DA5FD2A</existingIndex>
+<indexSegment>ED5D8710-FEEA-F2F9-F12C-A042FF0C7E85</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="EMPCONST_TEL_UNQ" id="2E66D398-AB24-2A4E-5C9D-1497CE14C3F6">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<segment>ED5D8710-FEEA-F2F9-F12C-A042FF0C7E85</segment>
+<tableSpace>56246165-571E-D7CD-86F8-5A64B1FD848B</tableSpace>
+<existingIndex>C0558AA4-393F-A078-046D-60181CA29D44</existingIndex>
+<indexSegment>ED5D8710-FEEA-F2F9-F12C-A042FF0C7E85</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>
