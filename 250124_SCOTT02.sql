@@ -457,8 +457,8 @@ select empno, ename, nvl2(mgr,to_char(mgr), 'CEO') from emp;
 -- 이때는 첫칸에 mgr만 써도 됨 저긴 null인지 아닌지 판단만 하기 때문
 
 ----------------------------------------------------
---p170 decade문 (if문과 동일)
---     decade(무엇이?, 뭐라면?, 뭐할래?, 다른 뭐라면?, 뭐할래?, ....... , 나머지 경우일때 뭐할래)
+--p170 decode문 (if문과 동일)
+--     decode(무엇이?, 뭐라면?, 뭐할래?, 다른 뭐라면?, 뭐할래?, ....... , 나머지 경우일때 뭐할래)
 -- job에 따라 급여 다르게 인상
 -- MANAGER 1.5 / SALESMAN 1.2 / ANALYST 1.05 / 1.04
 select empno, ename, job, sal, 

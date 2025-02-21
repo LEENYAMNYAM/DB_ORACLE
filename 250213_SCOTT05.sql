@@ -699,6 +699,4 @@ drop table table_name;
         modify(deptno number(3) 
                constraint professor_deptno_fk 
                references department(deptno));
-
-
-          
+         
