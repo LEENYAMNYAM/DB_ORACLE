@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PROFESSOR" directorySegmentName="seg_0" id="E636E38E-FBC3-9517-4BC7-F33255CB99BE">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<schemaObject>28BE8DA2-DAE4-80B4-EE90-747BB4CF01EA</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>F299E2E3-C3DF-8554-8F6C-B1675293C056</segment>
+<tableSpace>E7E363BF-0DA1-FDF6-E4C7-DC9BF34C78C6</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PAY" id="0805492E-01AF-C037-4E19-DB6E53519194">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HIREDATE" id="5A9545B0-2BC3-C17F-CDCB-01D59ABEECAC">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HPAGE" id="5C84686D-E41E-8504-013B-EF9A6A04A1F2">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROFNO" id="6926239D-2FCE-CD7D-4E89-6A1FB5EE64D9">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BONUS" id="BA0D2727-010F-BF9B-E54C-A3BF9D7DA4C8">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPTNO" id="D134E355-12BE-9A10-52C3-71DA882A4F16">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="DD348E58-EEC8-8CC6-D3BB-5A709F3DC1BD">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="DDF8344B-B699-B277-D4E9-43E8E9F53A53">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="E67A87D2-E304-3E00-1CA4-58A387D69992">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POSITION" id="E9B46395-0CA8-9BB7-E6E4-6BE1C1421E2F">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PROFESSOR_DEPTNO_FK" id="54E4BE65-1EAC-56CE-E481-47CB0C240301">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PROFESSOR_PK" id="E26D8A12-6330-ECFD-BA2E-0B8B57E38792">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<schemaObject>28BE8DA2-DAE4-80B4-EE90-747BB4CF01EA</schemaObject>
+<segment>3E6DE27C-1A19-F03D-F076-3EF62FF01CC5</segment>
+<tableSpace>E7E363BF-0DA1-FDF6-E4C7-DC9BF34C78C6</tableSpace>
+<indexSegment>3E6DE27C-1A19-F03D-F076-3EF62FF01CC5</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

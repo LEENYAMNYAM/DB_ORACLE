@@ -1,0 +1,212 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0FDF2E47-E659-526C-6F9B-2DEAE75BCE16" schemaObject="40D51C40-F3DE-98A3-8D6B-C9F4ABF11106" name="EMP_CONST">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>EMP_CONST</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPNO" id="F48EA646-2214-EE82-7CEB-E482239B7EF3">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>EMP_CONST</sourceObjSchema>
+<sourceObjName>EMPNO</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENAME" id="4F632D4A-5A6F-8654-571D-80080F6187B1">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>EMP_CONST</sourceObjSchema>
+<sourceObjName>ENAME</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>EMPCONST_ENAME_NN</notNullConstraintName>
+</Column>
+<Column name="JOB" id="FC7CBE6D-C1A0-BFC7-D8BF-12F0D7A7248A">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>EMP_CONST</sourceObjSchema>
+<sourceObjName>JOB</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEL" id="4467EA97-1CD1-DB18-D859-C5FEAFFB368B">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>EMP_CONST</sourceObjSchema>
+<sourceObjName>TEL</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HIREDATE" id="FBDAB2E0-5CD4-3422-9165-A0C18ACA3042">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>EMP_CONST</sourceObjSchema>
+<sourceObjName>HIREDATE</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SAL" id="FF9D051C-33BE-0FF4-9F7E-F2CAA25129AF">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>EMP_CONST</sourceObjSchema>
+<sourceObjName>SAL</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<constraintName>EMPCONST_SAL_CHK</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1000</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="COMM" id="28D730E6-C90C-985C-2CE9-CEC905335C1C">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>EMP_CONST</sourceObjSchema>
+<sourceObjName>COMM</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPTNO" id="0663E85A-826F-A450-BCCC-BD12F9B49F03">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>EMP_CONST</sourceObjSchema>
+<sourceObjName>DEPTNO</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="318A8ABF-CD17-79B5-2D6A-7D5E12D030DD" referredColumn="E5895578-609D-75DE-88C1-BC7F604DB53A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="691F17BE-EF8B-C955-7651-0553E1EE5057" name="EMPCONST_EMPNO_PK">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>EMPCONST_EMPNO_PK</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F48EA646-2214-EE82-7CEB-E482239B7EF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E66D398-AB24-2A4E-5C9D-1497CE14C3F6" name="EMPCONST_TEL_UNQ">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>EMPCONST_TEL_UNQ</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4467EA97-1CD1-DB18-D859-C5FEAFFB368B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C678F24-55C7-6BE1-5B65-5FAD7DA5FD2A" schemaObject="40D51C40-F3DE-98A3-8D6B-C9F4ABF11106" name="EMPCONST_EMPNO_PK">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>EMPCONST_EMPNO_PK</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F48EA646-2214-EE82-7CEB-E482239B7EF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0558AA4-393F-A078-046D-60181CA29D44" schemaObject="40D51C40-F3DE-98A3-8D6B-C9F4ABF11106" name="EMPCONST_TEL_UNQ">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>EMPCONST_TEL_UNQ</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4467EA97-1CD1-DB18-D859-C5FEAFFB368B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E7ECD99-E5E9-F329-AB03-AD50CDB3CADD" name="EMPCONST_DEPTNO_FK">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:55:47 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0663E85A-826F-A450-BCCC-BD12F9B49F03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

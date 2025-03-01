@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E636E38E-FBC3-9517-4BC7-F33255CB99BE" schemaObject="28BE8DA2-DAE4-80B4-EE90-747BB4CF01EA" name="PROFESSOR">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PROFESSOR</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROFNO" id="6926239D-2FCE-CD7D-4E89-6A1FB5EE64D9">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>PROFESSOR</sourceObjSchema>
+<sourceObjName>PROFNO</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="E67A87D2-E304-3E00-1CA4-58A387D69992">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>PROFESSOR</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="DDF8344B-B699-B277-D4E9-43E8E9F53A53">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>PROFESSOR</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSITION" id="E9B46395-0CA8-9BB7-E6E4-6BE1C1421E2F">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>PROFESSOR</sourceObjSchema>
+<sourceObjName>POSITION</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAY" id="0805492E-01AF-C037-4E19-DB6E53519194">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>PROFESSOR</sourceObjSchema>
+<sourceObjName>PAY</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HIREDATE" id="5A9545B0-2BC3-C17F-CDCB-01D59ABEECAC">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>PROFESSOR</sourceObjSchema>
+<sourceObjName>HIREDATE</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BONUS" id="BA0D2727-010F-BF9B-E54C-A3BF9D7DA4C8">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>PROFESSOR</sourceObjSchema>
+<sourceObjName>BONUS</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPTNO" id="D134E355-12BE-9A10-52C3-71DA882A4F16">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>PROFESSOR</sourceObjSchema>
+<sourceObjName>DEPTNO</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BEB626AD-85DD-4219-66D5-F6ABF13F6BA7" referredColumn="18266B44-A7C0-094B-E39E-DFF64B08E5A7"/>
+</associations>
+</Column>
+<Column name="EMAIL" id="DD348E58-EEC8-8CC6-D3BB-5A709F3DC1BD">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>PROFESSOR</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HPAGE" id="5C84686D-E41E-8504-013B-EF9A6A04A1F2">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>PROFESSOR</sourceObjSchema>
+<sourceObjName>HPAGE</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E26D8A12-6330-ECFD-BA2E-0B8B57E38792" schemaObject="28BE8DA2-DAE4-80B4-EE90-747BB4CF01EA" name="PROFESSOR_PK">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>SYS_C008327</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6926239D-2FCE-CD7D-4E89-6A1FB5EE64D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54E4BE65-1EAC-56CE-E481-47CB0C240301" name="PROFESSOR_DEPTNO_FK">
+<createdBy>admin</createdBy>
+<createdTime>2025-02-14 05:26:36 UTC</createdTime>
+<ownerDesignName>몰라이거</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D134E355-12BE-9A10-52C3-71DA882A4F16"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
