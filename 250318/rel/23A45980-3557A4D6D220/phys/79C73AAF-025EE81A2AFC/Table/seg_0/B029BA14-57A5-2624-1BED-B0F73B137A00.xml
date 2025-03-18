@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="BOARDS" directorySegmentName="seg_0" id="B029BA14-57A5-2624-1BED-B0F73B137A00">
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:09 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<schemaObject>2469A9E6-37B1-A34B-3534-80F2950049CE</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>86B24C11-DE24-9AF4-FAE1-65BFAE3A9775</segment>
+<tableSpace>A466D6A9-08CF-CCBA-E422-304C3F9795FD</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NUM" id="001CA29E-3096-6618-CDB9-A1A4EFB94872">
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:10 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUBJECT" id="0E8CE0FB-8EC2-8241-0057-97FFFE965C72">
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:10 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="READCOUNT" id="3AB0ACA7-259A-BB0D-E1FC-3E10EEA46C3C">
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:10 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="REGDATE" id="578CA5A5-58AC-D766-7DA6-D5817504BC68">
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:10 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="6A491B88-682C-7856-388C-89DA9ED2F277">
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:10 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTENT" id="735726D4-0DD1-782F-7417-1D9CBBD1590E">
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:10 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USERID" id="8337F882-96B4-2FFF-DE9D-AEB5F0DF18DF">
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:10 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="BOARDS_PK" id="C8B3010B-FB03-610C-6522-81E64ADBAB84">
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:12 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<schemaObject>2469A9E6-37B1-A34B-3534-80F2950049CE</schemaObject>
+<segment>27075B64-8E90-469D-B4D5-914BB43227CD</segment>
+<tableSpace>A466D6A9-08CF-CCBA-E422-304C3F9795FD</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="BOARDS_PK" id="D16BC6DC-5ACA-2C3E-755A-60E335F9DD5B">
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:12 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<segment>27075B64-8E90-469D-B4D5-914BB43227CD</segment>
+<tableSpace>A466D6A9-08CF-CCBA-E422-304C3F9795FD</tableSpace>
+<existingIndex>C8B3010B-FB03-610C-6522-81E64ADBAB84</existingIndex>
+<indexSegment>27075B64-8E90-469D-B4D5-914BB43227CD</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

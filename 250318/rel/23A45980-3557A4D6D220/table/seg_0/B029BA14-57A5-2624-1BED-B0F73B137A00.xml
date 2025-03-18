@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B029BA14-57A5-2624-1BED-B0F73B137A00" schemaObject="2469A9E6-37B1-A34B-3534-80F2950049CE" name="BOARDS">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>BOARDS</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:09 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NUM" id="001CA29E-3096-6618-CDB9-A1A4EFB94872">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>BOARDS</sourceObjSchema>
+<sourceObjName>NUM</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:10 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USERID" id="8337F882-96B4-2FFF-DE9D-AEB5F0DF18DF">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>BOARDS</sourceObjSchema>
+<sourceObjName>USERID</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:10 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUBJECT" id="0E8CE0FB-8EC2-8241-0057-97FFFE965C72">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>BOARDS</sourceObjSchema>
+<sourceObjName>SUBJECT</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:10 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="6A491B88-682C-7856-388C-89DA9ED2F277">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>BOARDS</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:10 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="READCOUNT" id="3AB0ACA7-259A-BB0D-E1FC-3E10EEA46C3C">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>BOARDS</sourceObjSchema>
+<sourceObjName>READCOUNT</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:10 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTENT" id="735726D4-0DD1-782F-7417-1D9CBBD1590E">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>BOARDS</sourceObjSchema>
+<sourceObjName>CONTENT</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:10 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGDATE" id="578CA5A5-58AC-D766-7DA6-D5817504BC68">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>BOARDS</sourceObjSchema>
+<sourceObjName>REGDATE</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:10 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D16BC6DC-5ACA-2C3E-755A-60E335F9DD5B" name="BOARDS_PK">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>BOARDS_PK</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:12 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="001CA29E-3096-6618-CDB9-A1A4EFB94872"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8B3010B-FB03-610C-6522-81E64ADBAB84" schemaObject="2469A9E6-37B1-A34B-3534-80F2950049CE" name="BOARDS_PK">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>BOARDS_PK</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:12 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="001CA29E-3096-6618-CDB9-A1A4EFB94872"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

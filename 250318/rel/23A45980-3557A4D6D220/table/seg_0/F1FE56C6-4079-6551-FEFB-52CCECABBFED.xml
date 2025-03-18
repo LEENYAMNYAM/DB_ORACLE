@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F1FE56C6-4079-6551-FEFB-52CCECABBFED" schemaObject="2469A9E6-37B1-A34B-3534-80F2950049CE" name="COMMENTS">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>COMMENTS</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:18 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CNUM" id="A682CEF9-9BAD-718B-AB7F-3E182DC1B829">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>COMMENTS</sourceObjSchema>
+<sourceObjName>CNUM</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:18 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USERID" id="57F59D88-F24B-38E3-7D24-15674E8CFFFD">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>COMMENTS</sourceObjSchema>
+<sourceObjName>USERID</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:18 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MSG" id="9E19E84D-A278-5586-2303-E07311988453">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>COMMENTS</sourceObjSchema>
+<sourceObjName>MSG</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:18 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGDATE" id="AD9BFAB9-707A-8CCC-5276-29AFFE75480B">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>COMMENTS</sourceObjSchema>
+<sourceObjName>REGDATE</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:18 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BNUM" id="B760EF0D-3CF3-67C0-6D60-D3FB37320155">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>COMMENTS</sourceObjSchema>
+<sourceObjName>BNUM</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:18 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D26A2B34-F6ED-3A5D-B470-9CD416A45EA7" referredColumn="001CA29E-3096-6618-CDB9-A1A4EFB94872"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0F025586-116C-47CC-DA67-1CD55D2E61DC" name="TABLE1_PK">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>TABLE1_PK</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:18 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A682CEF9-9BAD-718B-AB7F-3E182DC1B829"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2BD60010-78F9-9D69-235F-565C96556189" schemaObject="2469A9E6-37B1-A34B-3534-80F2950049CE" name="TABLE1_PK">
+<sourceConnName>SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>TABLE1_PK</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:18 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A682CEF9-9BAD-718B-AB7F-3E182DC1B829"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E708EEC7-D637-D46B-E032-DB6AADB3B1BE" name="COMMENTS2_FK1">
+<createdBy>admin</createdBy>
+<createdTime>2025-03-18 02:37:18 UTC</createdTime>
+<ownerDesignName>250318</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B760EF0D-3CF3-67C0-6D60-D3FB37320155"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
